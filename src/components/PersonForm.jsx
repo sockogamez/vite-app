@@ -82,3 +82,37 @@ function PersonForm({ createPerson }) {
 }
 
 export default PersonForm;
+
+
+/*
+Documentacion 
+Version 1.o
+Socko Gamez 
+Enero 2023
+
+
+Componente llamado "PersonForm" que se utiliza para crear un nuevo personaje. El componente importa 
+dos funciones de React "useState" y "useContext" y una función "PersonContext" de "../context/PersonContext".
+
+La función "PersonForm" recibe una propiedad "createPerson" como argumento, que es una función que 
+se llama cuando se envía el formulario para crear un nuevo personaje.
+
+La función "PersonForm" utiliza el hook "useContext" para obtener el valor de la variable "version" 
+del contexto "PersonContext".
+
+La función "PersonForm" utiliza el hook "useState" para crear dos variables de estado: "nombre" y 
+"residencia". Estas variables se utilizan para almacenar el valor de los campos de entrada del formulario.
+
+La función "PersonForm" también define una función "uuidv4" que genera un identificador único para 
+el nuevo personaje.
+
+La función "PersonForm" tiene un evento "onSubmit" en el formulario que se ejecuta cuando se envía el 
+formulario. El evento llama a la función "fcnEnviar" que se encarga de crear un nuevo objeto "newPerson" 
+con los valores de los campos de entrada del formulario, el id generado con la función uuidv4 y una 
+imagen predefinida. La función "fcnEnviar" también llama a la función "createPerson" con el objeto 
+"newPerson" como argumento, y vacía los campos de entrada del formulario.
+
+Finalmente, el componente "PersonForm" devuelve una estructura de formulario HTML con dos campos de 
+entrada para el nombre y la residencia del nuevo personaje, un botón para enviar el formulario y un 
+texto que muestra la versión Bootcamp y una versión que es proporcionada por el contexto.
+*/

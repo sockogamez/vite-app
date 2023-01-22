@@ -31,4 +31,34 @@ function PersonDetail({ id, nombre, residencia, imagen }) {
 
 export default PersonDetail;
 
-//<Button as={Link} to="/" >Regresar</Button>
+/*
+Documentacion 
+Version 1.o
+Socko Gamez 
+Enero 2023
+
+
+Componente de React llamado "PersonDetail" que se utiliza para mostrar los detalles de un personaje seleccionado. 
+El componente importa dos funciones de "react-router-dom" y una función de "react" llamada "useContext".
+
+La función "PersonDetail" recibe cuatro propiedades como argumentos: "id", "nombre", "residencia" e "imagen". 
+Estas propiedades son los detalles del personaje seleccionado.
+
+La función "PersonDetail" utiliza el hook "useContext" para obtener el valor de la variable "version" del contexto 
+"PersonContext".
+
+La función "PersonDetail" comienza comprobando si la longitud del nombre es 0. Si es así, devuelve una etiqueta 
+"div" con el mensaje "No hay seleccionado a un personaje....".
+
+Si el nombre no está vacío, se devuelve un elemento "div" con una clase "space-x-4 space-y-4 p-2 grid grid-cols-1". 
+Dentro de este div se encuentra otro div con varias clases CSS para darle estilo al contenido. Dentro de este div, 
+se muestran los detalles del personaje seleccionado como una imagen, un título con el nombre del personaje, 
+un párrafo con la residencia del personaje, un botón para regresar a la página principal y un párrafo con la 
+versión obtenida del contexto.
+
+"PersonDetail" que se utiliza para mostrar los detalles de 
+un personaje seleccionado, se obtiene una versión de un contexto compartido, comprueba si se ha seleccionado 
+un personaje y si no muestra un mensaje y si si muestra una estructura HTML con los detalles del personaje 
+seleccionado y un botón para regresar a la página principal.
+
+*/
